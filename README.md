@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jagan Kumar - Portfolio Website
 
-## Getting Started
+Personal portfolio website showcasing my professional experience, skills, projects, and education.
 
-First, run the development server:
+## 🚀 Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Visit the live site at: [https://jagankumar191.github.io](https://jagankumar191.github.io)
+
+## 👨‍💻 About Me
+
+Senior Engineer with 7+ years of expertise in designing, developing, and maintaining scalable applications. Proficient in Java, Spring Boot, and RESTful APIs, with a strong background in event-driven architecture and database management.
+
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Animations**: Framer Motion
+- **Components**: Radix UI, shadcn/ui
+- **Deployment**: GitHub Pages
+- **Build Tool**: Next.js Static Export
+
+## 📁 Project Structure
+
+```
+├── src/
+│   ├── app/                 # Next.js app directory
+│   │   ├── layout.tsx       # Root layout
+│   │   ├── page.tsx         # Home page
+│   │   └── globals.css      # Global styles
+│   ├── components/
+│   │   ├── sections/        # Portfolio sections
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   ├── Skills.tsx
+│   │   │   ├── Experience.tsx
+│   │   │   ├── Projects.tsx
+│   │   │   ├── Education.tsx
+│   │   │   ├── Contact.tsx
+│   │   │   └── Footer.tsx
+│   │   └── ui/              # Reusable UI components
+│   └── lib/                 # Utility functions
+└── public/                  # Static assets
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Install dependencies
+npm install
 
-## Learn More
+# Run development server
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Create production build
+npm run build
+```
 
-## Deploy on Vercel
+The static site will be generated in the `out/` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To update content, edit the following files:
+
+- **Personal Info**: `src/components/sections/Hero.tsx`
+- **Skills**: `src/components/sections/Skills.tsx`
+- **Experience**: `src/components/sections/Experience.tsx`
+- **Projects**: `src/components/sections/Projects.tsx`
+- **Education**: `src/components/sections/Education.tsx`
+- **Contact**: `src/components/sections/Contact.tsx`
+
+## 📄 Resume
+
+Replace `public/resume.pdf` with your updated resume.
+
+## 🚀 Deployment
+
+This site is automatically deployed to GitHub Pages using GitHub Actions. Any push to the `main` branch triggers a new deployment.
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+## 📧 Contact
+
+- **Email**: [Contact form on website](https://jagankumar191.github.io#contact)
+- **LinkedIn**: [linkedin.com/in/jagan-kumar-15b505a9](https://www.linkedin.com/in/jagan-kumar-15b505a9)
+- **GitHub**: [github.com/jagankumar191](https://github.com/jagankumar191)
+
+## 📄 License
+
+This project is open source and available for personal use.
