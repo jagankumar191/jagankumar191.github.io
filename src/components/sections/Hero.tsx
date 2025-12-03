@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
     return (
@@ -25,8 +26,7 @@ export function Hero() {
                             </h2>
                         </div>
                         <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                            I build scalable, high-performance web applications and robust backend systems.
-                            Passionate about clean code, modern architectures, and solving complex problems.
+                            Experienced Senior Java/Spring Boot Engineer with 7+ years of end-to-end application development experience, specializing in building scalable, high-performance backend systems and RESTful APIs using Java 8/17, Spring Boot, JPA, and Hibernate. Strong expertise in event-driven architectures, database design and optimization (Oracle, MySQL, MongoDB), and integration of CI/CD pipelines with Git and Jenkins to ensure reliable, frequent releases. Proven track record of delivering complex enterprise solutions, including BOM APIs and authentication/compliance platforms, with a focus on clean, testable code, troubleshooting production issues, and driving best practices within Agile teams. Additionally experienced with MEAN stack, automated testing tools, and modern AI-assisted development (GitHub Copilot), enabling efficient collaboration across cross-functional, cloud-ready projects.
                         </p>
                         <div className="flex flex-col gap-2 min-[400px]:flex-row">
                             <Button asChild size="lg">
@@ -46,7 +46,7 @@ export function Hero() {
                                 </Link>
                             </Button>
                             <Button variant="ghost" size="icon" asChild>
-                                <Link href="https://linkedin.com/in/jagankumar191" target="_blank">
+                                <Link href="https://www.linkedin.com/in/jagan-kumar-15b505a9" target="_blank">
                                     <Linkedin className="h-5 w-5" />
                                     <span className="sr-only">LinkedIn</span>
                                 </Link>
@@ -69,13 +69,13 @@ export function Hero() {
                                     <span className="text-4xl font-bold">JK</span>
                                 </div>
                                 {/* Uncomment below when you have a real image */}
-                                {/* <Image
-                  src="/profile.jpg"
-                  alt="Jagan Kumar"
-                  fill
-                  className="object-cover"
-                  priority
-                /> */}
+                                <Image
+                                    src="/jagan.jpg"
+                                    alt="Jagan Kumar"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
                             </div>
                         </div>
                     </motion.div>

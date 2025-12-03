@@ -7,22 +7,22 @@ const skillCategories = [
     {
         title: "Backend",
         icon: <Server className="h-6 w-6" />,
-        skills: ["Java", "Spring Boot", "Node.js", "Express", "REST APIs", "Microservices"],
+        skills: ["Java 17", "Spring Boot", "JPA", "Hibernate", "REST APIs", "Event-driven architecture"],
     },
     {
         title: "Frontend",
         icon: <Layout className="h-6 w-6" />,
-        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
+        skills: ["Angular", "React", "Next.js", "TypeScript", "HTML5", "CSS3"],
     },
     {
         title: "Database",
         icon: <Database className="h-6 w-6" />,
-        skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "JPA/Hibernate"],
+        skills: ["Oracle", "MongoDB", "MySQL", "H2 Database"],
     },
     {
         title: "DevOps & Tools",
         icon: <Wrench className="h-6 w-6" />,
-        skills: ["Docker", "Kubernetes", "Git", "Jenkins", "AWS", "Linux"],
+        skills: ["Git", "Jenkins", "HashiCorp Vault", "IntelliJ", "Eclipse", "VS Code"],
     },
 ];
 

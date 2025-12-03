@@ -36,7 +36,7 @@ export function Contact() {
                             className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
                             asChild
                         >
-                            <Link href="mailto:contact@jagankumar.com">
+                            <Link href="mailto:kumarjagan02@gmail.com">
                                 <Mail className="h-8 w-8" />
                                 <span className="text-lg font-semibold">Email Me</span>
                             </Link>
@@ -54,7 +54,7 @@ export function Contact() {
                             className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
                             asChild
                         >
-                            <Link href="https://linkedin.com/in/jagankumar191" target="_blank">
+                            <Link href="https://www.linkedin.com/in/jagan-kumar-15b505a9" target="_blank">
                                 <Linkedin className="h-8 w-8" />
                                 <span className="text-lg font-semibold">LinkedIn</span>
                             </Link>

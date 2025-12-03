@@ -12,29 +12,15 @@ import {
 
 const education = [
     {
-        institution: "University of Technology",
-        degree: "Bachelor of Science in Computer Science",
-        year: "2014 - 2018",
-        description: "Graduated with Honors. Specialized in Software Engineering and Distributed Systems.",
+        institution: "VIT University, Vellore",
+        degree: "Master of Computer Applications (MCA)",
+        year: "2014 - 2017",
+        description: "Specialized in Software Engineering and Application Development.",
     },
 ];
 
-const certifications = [
-    {
-        name: "AWS Certified Solutions Architect - Associate",
-        issuer: "Amazon Web Services",
-        year: "2023",
-    },
-    {
-        name: "Certified Kubernetes Administrator (CKA)",
-        issuer: "The Linux Foundation",
-        year: "2022",
-    },
-    {
-        name: "Oracle Certified Professional: Java SE 11 Developer",
-        issuer: "Oracle",
-        year: "2021",
-    },
+const certifications: { name: string; issuer: string; year: string }[] = [
+    // No specific certifications listed in resume
 ];
 
 export function Education() {

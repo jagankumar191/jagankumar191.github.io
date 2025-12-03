@@ -15,26 +15,50 @@ import Link from "next/link";
 
 const projects = [
     {
-        title: "E-Commerce Platform",
+        title: "Aqua - Automated Testing Tool",
         description:
-            "A full-featured e-commerce application with product management, cart functionality, and secure checkout. Built with Next.js and Stripe.",
-        tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Prisma"],
+            "An automated testing tool with three major modules: Model Module for page objects, Design Module for test step designs, and Execution Module for running test cases with scheduling and batch execution capabilities.",
+        tags: ["Angular", "Node.js", "Express.js", "MongoDB"],
         githubUrl: "https://github.com/jagankumar191",
         demoUrl: "#",
     },
     {
-        title: "Task Management API",
+        title: "Directory Server 2.0",
         description:
-            "A robust REST API for task management with user authentication, role-based access control, and real-time updates.",
-        tags: ["Java", "Spring Boot", "PostgreSQL", "Docker", "JWT"],
+            "Agile Development Project for ESS Authentication and EMVCO. Contributed to EMV 3-D Secure Protocol v2.0.0 with focus on security, performance, and user experience in app-based authentication.",
+        tags: ["Java 8", "Spring Boot", "JPA", "Hibernate", "Oracle", "MySQL"],
         githubUrl: "https://github.com/jagankumar191",
         demoUrl: "#",
     },
     {
-        title: "DevOps Dashboard",
+        title: "Authentication Compliance Program",
         description:
-            "A centralized dashboard for monitoring microservices health, deployment status, and system metrics.",
-        tags: ["React", "Node.js", "Kubernetes", "Prometheus", "Grafana"],
+            "Application for managing authentication compliance with Admin and Vendor modules. Admin handles CRUD operations on MPIs and ACSs. Vendor module handles REST API requests with real-time status updates.",
+        tags: ["Java 8", "Spring Boot", "JPA", "Hibernate", "H2 Database"],
+        githubUrl: "https://github.com/jagankumar191",
+        demoUrl: "#",
+    },
+    {
+        title: "Taste the Bake",
+        description:
+            "An e-commerce platform for selling baked goods online with complete product catalog, shopping cart, and order management functionality.",
+        tags: ["HTML", "CSS", "PHP", "MySQL"],
+        githubUrl: "https://github.com/jagankumar191",
+        demoUrl: "#",
+    },
+    {
+        title: "Art Hardy",
+        description:
+            "An online marketplace platform for arts, paintings, crafts, and handmade products, connecting artists with buyers.",
+        tags: ["HTML", "CSS", "PHP", "MySQL"],
+        githubUrl: "https://github.com/jagankumar191",
+        demoUrl: "#",
+    },
+    {
+        title: "Nail Art Booking",
+        description:
+            "A web application for online booking of nail art and design services with Bootstrap/Materialize frameworks for enhanced UI/UX.",
+        tags: ["HTML", "CSS", "PHP", "Bootstrap", "Materialize"],
         githubUrl: "https://github.com/jagankumar191",
         demoUrl: "#",
     },
