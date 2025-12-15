@@ -53,19 +53,20 @@ export function Skills() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative overflow-hidden rounded-lg border bg-background p-6 hover:shadow-lg transition-shadow"
+                            className="group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-sm p-6 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300"
                         >
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-2 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="relative flex items-center gap-4 mb-4">
+                                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 transition-all duration-300">
                                     {category.icon}
                                 </div>
                                 <h3 className="text-xl font-bold">{category.title}</h3>
                             </div>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="relative flex flex-wrap gap-2">
                                 {category.skills.map((skill) => (
                                     <span
                                         key={skill}
-                                        className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                                        className="inline-flex items-center rounded-lg border px-3 py-1 text-xs font-semibold transition-all duration-200 border-transparent bg-secondary/80 text-secondary-foreground hover:bg-secondary hover:scale-105"
                                     >
                                         {skill}
                                     </span>

@@ -33,11 +33,11 @@ export function Contact() {
                     >
                         <Button
                             variant="outline"
-                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
+                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 rounded-xl"
                             asChild
                         >
                             <Link href="mailto:kumarjagan02@gmail.com">
-                                <Mail className="h-8 w-8" />
+                                <Mail className="h-8 w-8 text-primary" />
                                 <span className="text-lg font-semibold">Email Me</span>
                             </Link>
                         </Button>
@@ -51,11 +51,11 @@ export function Contact() {
                     >
                         <Button
                             variant="outline"
-                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
+                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 rounded-xl"
                             asChild
                         >
                             <Link href="https://www.linkedin.com/in/jagan-kumar-15b505a9" target="_blank">
-                                <Linkedin className="h-8 w-8" />
+                                <Linkedin className="h-8 w-8 text-primary" />
                                 <span className="text-lg font-semibold">LinkedIn</span>
                             </Link>
                         </Button>
@@ -69,11 +69,11 @@ export function Contact() {
                     >
                         <Button
                             variant="outline"
-                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
+                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 rounded-xl"
                             asChild
                         >
                             <Link href="https://github.com/jagankumar191" target="_blank">
-                                <Github className="h-8 w-8" />
+                                <Github className="h-8 w-8 text-primary" />
                                 <span className="text-lg font-semibold">GitHub</span>
                             </Link>
                         </Button>
@@ -87,11 +87,11 @@ export function Contact() {
                     >
                         <Button
                             variant="outline"
-                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5"
+                            className="w-full h-32 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 rounded-xl"
                             asChild
                         >
                             <a href="/resume.pdf" download>
-                                <FileText className="h-8 w-8" />
+                                <FileText className="h-8 w-8 text-primary" />
                                 <span className="text-lg font-semibold">Resume</span>
                             </a>
                         </Button>

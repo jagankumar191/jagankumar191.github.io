@@ -60,7 +60,7 @@ export function Experience() {
                     </p>
                 </motion.div>
 
-                <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-muted-foreground/20 before:to-transparent">
+                <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-primary/40 before:to-transparent">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={index}
@@ -70,27 +70,27 @@ export function Experience() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
                         >
-                            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-border bg-background shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                            <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary/30 bg-card shadow-lg shadow-primary/10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 group-hover:scale-110 transition-transform duration-300">
                                 <Briefcase className="w-5 h-5 text-primary" />
                             </div>
 
-                            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
-                                <div className="flex flex-col sm:flex-row justify-between mb-2 sm:items-center">
-                                    <h3 className="font-bold text-lg">{exp.role}</h3>
-                                    <div className="flex items-center text-sm text-muted-foreground">
-                                        <Calendar className="mr-1 h-3 w-3" />
+                            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm text-card-foreground shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1">
+                                <div className="flex flex-col sm:flex-row justify-between mb-3 sm:items-center gap-2">
+                                    <h3 className="font-bold text-xl">{exp.role}</h3>
+                                    <div className="flex items-center text-sm text-muted-foreground bg-muted/30 px-3 py-1 rounded-full">
+                                        <Calendar className="mr-1.5 h-3.5 w-3.5" />
                                         {exp.duration}
                                     </div>
                                 </div>
-                                <div className="text-primary font-medium mb-2">{exp.company}</div>
-                                <p className="text-muted-foreground mb-4 text-sm">
+                                <div className="text-primary font-semibold mb-3 text-lg">{exp.company}</div>
+                                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                                     {exp.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     {exp.skills.map((skill) => (
                                         <span
                                             key={skill}
-                                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                                            className="inline-flex items-center rounded-lg border px-3 py-1 text-xs font-semibold transition-all duration-200 border-transparent bg-secondary/80 text-secondary-foreground hover:bg-secondary hover:scale-105"
                                         >
                                             {skill}
                                         </span>

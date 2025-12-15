@@ -15,6 +15,14 @@ import Link from "next/link";
 
 const projects = [
     {
+        title: "Spring Gemini AI Chatbot",
+        description:
+            "A containerized AI chatbot application with Spring Boot backend and static frontend. Features Docker orchestration, Nginx proxy, secure API key management, and integration with Google Gemini AI for intelligent conversations.",
+        tags: ["Spring Boot", "Docker", "Nginx", "Google Gemini AI", "Java"],
+        githubUrl: "https://github.com/jagankumar191/spring-gemini-ai",
+        demoUrl: "#",
+    },
+    {
         title: "Aqua - Automated Testing Tool",
         description:
             "An automated testing tool with three major modules: Model Module for page objects, Design Module for test step designs, and Execution Module for running test cases with scheduling and batch execution capabilities.",
@@ -91,38 +99,40 @@ export function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className="group"
                         >
-                            <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-                                <CardHeader>
-                                    <CardTitle>{project.title}</CardTitle>
-                                    <CardDescription className="mt-2">
+                            <Card className="h-full flex flex-col overflow-hidden hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 bg-card/50 backdrop-blur-sm border-border/50">
+                                <div className="h-2 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] group-hover:bg-[position:100%_0] transition-all duration-500" />
+                                <CardHeader className="pb-4">
+                                    <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">{project.title}</CardTitle>
+                                    <CardDescription className="mt-3 text-muted-foreground/90 leading-relaxed">
                                         {project.description}
                                     </CardDescription>
                                 </CardHeader>
-                                <CardContent className="flex-grow">
+                                <CardContent className="flex-grow pb-4">
                                     <div className="flex flex-wrap gap-2">
                                         {project.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary/10 text-primary hover:bg-primary/20"
+                                                className="inline-flex items-center rounded-lg border px-3 py-1 text-xs font-semibold transition-all duration-200 border-transparent bg-primary/10 text-primary hover:bg-primary/20 hover:scale-105"
                                             >
                                                 {tag}
                                             </span>
                                         ))}
                                     </div>
                                 </CardContent>
-                                <CardFooter className="flex justify-between">
-                                    <Button variant="outline" size="sm" asChild>
+                                <CardFooter className="flex gap-3 pt-4 border-t border-border/50">
+                                    <Button variant="outline" size="sm" className="flex-1 hover:bg-primary/10" asChild>
                                         <Link href={project.githubUrl} target="_blank">
                                             <Github className="mr-2 h-4 w-4" />
                                             Code
                                         </Link>
                                     </Button>
                                     {project.demoUrl && (
-                                        <Button size="sm" asChild>
+                                        <Button size="sm" className="flex-1 shadow-lg shadow-primary/25" asChild>
                                             <Link href={project.demoUrl} target="_blank">
                                                 <ExternalLink className="mr-2 h-4 w-4" />
-                                                Live Demo
+                                                Demo
                                             </Link>
                                         </Button>
                                     )}

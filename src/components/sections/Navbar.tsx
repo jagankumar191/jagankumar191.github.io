@@ -31,13 +31,13 @@ export function Navbar() {
             className={cn(
                 "fixed top-0 z-50 w-full transition-all duration-300",
                 isScrolled
-                    ? "bg-background/80 backdrop-blur-md border-b shadow-sm"
+                    ? "bg-background/80 backdrop-blur-lg border-b border-border/50 shadow-lg shadow-primary/5"
                     : "bg-transparent"
             )}
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-16 items-center justify-between">
-                    <Link href="/" className="text-xl font-bold tracking-tight">
+                    <Link href="/" className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                         Jagan Kumar
                     </Link>
 
@@ -47,12 +47,13 @@ export function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary relative group"
                             >
                                 {item.name}
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
                             </Link>
                         ))}
-                        <Button size="sm" asChild>
+                        <Button size="sm" className="shadow-md shadow-primary/25" asChild>
                             <a href="/resume.pdf" download>Resume</a>
                         </Button>
                     </nav>
@@ -69,7 +70,7 @@ export function Navbar() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden border-b bg-background">
+                <div className="md:hidden border-b border-border/50 bg-background/95 backdrop-blur-lg">
                     <div className="container px-4 py-4 space-y-4">
                         {navItems.map((item) => (
                             <Link
@@ -81,7 +82,7 @@ export function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
-                        <Button size="sm" className="w-full" asChild>
+                        <Button size="sm" className="w-full shadow-md shadow-primary/25" asChild>
                             <a href="/resume.pdf" download>Download Resume</a>
                         </Button>
                     </div>

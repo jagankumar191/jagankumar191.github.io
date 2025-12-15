@@ -20,7 +20,16 @@ const education = [
 ];
 
 const certifications: { name: string; issuer: string; year: string }[] = [
-    // No specific certifications listed in resume
+    {
+        name: "Gen AI Practitioner Award",
+        issuer: "Professional Recognition",
+        year: "2025",
+    },
+    {
+        name: "Best Team Award",
+        issuer: "Team Excellence Recognition",
+        year: "2025",
+    },
 ];
 
 export function Education() {
@@ -41,14 +50,14 @@ export function Education() {
                         </div>
                         <div className="space-y-6">
                             {education.map((edu, index) => (
-                                <Card key={index}>
+                                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                                     <CardHeader>
-                                        <CardTitle>{edu.institution}</CardTitle>
-                                        <CardDescription>{edu.year}</CardDescription>
+                                        <CardTitle className="text-xl">{edu.institution}</CardTitle>
+                                        <CardDescription className="text-sm">{edu.year}</CardDescription>
                                     </CardHeader>
                                     <CardContent>
-                                        <p className="font-medium">{edu.degree}</p>
-                                        <p className="text-sm text-muted-foreground mt-2">
+                                        <p className="font-semibold text-primary">{edu.degree}</p>
+                                        <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                                             {edu.description}
                                         </p>
                                     </CardContent>
@@ -67,12 +76,12 @@ export function Education() {
                         <div className="flex items-center gap-2 mb-8">
                             <Award className="h-6 w-6 text-primary" />
                             <h2 className="text-3xl font-bold tracking-tighter">
-                                Certifications
+                                Certifications & Rewards
                             </h2>
                         </div>
                         <div className="space-y-6">
-                            {certifications.map((cert, index) => (
-                                <Card key={index}>
+                            {certifications.length > 0 ? certifications.map((cert, index) => (
+                                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                                     <CardHeader>
                                         <CardTitle className="text-lg">{cert.name}</CardTitle>
                                         <CardDescription>{cert.issuer}</CardDescription>
@@ -83,7 +92,13 @@ export function Education() {
                                         </p>
                                     </CardContent>
                                 </Card>
-                            ))}
+                            )) : (
+                                <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+                                    <CardContent className="pt-6">
+                                        <p className="text-muted-foreground text-center">Professional certifications coming soon</p>
+                                    </CardContent>
+                                </Card>
+                            )}
                         </div>
                     </motion.div>
                 </div>
